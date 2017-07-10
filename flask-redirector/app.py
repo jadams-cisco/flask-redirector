@@ -4,7 +4,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'PUT', 'POST', 'PATCH', 'DELETE'])
 def index():
     return app.send_static_file('index.html')
 
