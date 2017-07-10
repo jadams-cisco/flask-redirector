@@ -12,4 +12,4 @@ def index():
 def background():
     return app.send_static_file('background.jpg')
 
-serve(app, listen='*:8080')
+serve(app, host="0.0.0.0", port='8080')
