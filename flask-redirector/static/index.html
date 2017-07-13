@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>DevNet Sandbox</title>
 </head>
+<script>
+var dots = window.setInterval( function() {
+    var wait = document.getElementById("wait");
+    if ( wait.innerHTML.length > 3 )
+        wait.innerHTML = "";
+    else
+        wait.innerHTML += ".";
+    }, 100);
+</script>
 <style>
 body {
     background: url("/background") no-repeat center center fixed;
@@ -65,7 +74,7 @@ pre {
 <br>
 <br>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-<h1>Doh!</h1>
+<h1>Building Upgrades<span id="wait">.</span></h1>
 <br>
 <h3>The DevNet Sandbox is currently down for maintenance.</h3>
 <h3>Hang in there! We'll be back online Tuesday, July 18, 07:00AM UTC (12:00AM PDT).</h3>
